@@ -1,6 +1,11 @@
 package com.generation.db.model;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "direccion")
@@ -21,6 +26,10 @@ public class Direccion {
 
     private String colonia;
 
+    private String estado;
+
+    private String pais;
+
     private String formatted;
 
     public Direccion() {
@@ -32,6 +41,34 @@ public class Direccion {
         this.numInt = numInt;
         this.cp = cp;
         this.colonia = colonia;
+        this.formatted = formatted;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public Direccion(String calle, String numEx, String numInt, String cp, String colonia, String estado, String pais, String formatted) {
+
+        this.calle = calle;
+        this.numEx = numEx;
+        this.numInt = numInt;
+        this.cp = cp;
+        this.colonia = colonia;
+        this.estado = estado;
+        this.pais = pais;
         this.formatted = formatted;
     }
 

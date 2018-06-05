@@ -9,6 +9,8 @@ public interface DireccionRepository extends JpaRepository<Direccion, Long> {
 
     Optional<Direccion> findById(Long id);
 
+    Direccion findByCalle(String calle);
+
     Direccion findByFormatted(String formatted);
 
     @Override

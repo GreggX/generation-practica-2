@@ -30,7 +30,7 @@ public class SetupDataLoader implements ApplicationListener<ContextRefreshedEven
 
         final Direccion direccionUno = crearDireccionSiNoExiste("calle", "cp", "numExt", "numInt", "Col", "formattef");
 
-        crearPersonaSiNoExiste("Greg", "Gonzalez", "Vazquez", "23", direccionUno);
+        crearPersonaSiNoExiste("dklsajds", "Gonzalez", "Vazquez", "23", direccionUno);
 
         alreadySetup = true;
     }
